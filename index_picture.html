@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>你保护世界，我保护你</title>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #00FFFF;
+			}
+			#back{
+				width: 100px;
+				height: 50px;
+				border: 1px solid black;
+				border-radius:50px 0 0 50px ;
+				line-height: 50px;
+				padding-left: 55px;
+				overflow: hidden;
+			}
+			a{
+				text-decoration: none;
+			}
+			a:hover{
+				color: yellow;
+			}
+			#picture{
+				width: 362px;
+				height: 768px;
+				background-image: url(img/IMG20200903233040.jpg);
+				background-size: 100% 100%;
+				margin: 0 auto;
+				border-radius: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="back" onmouseover="showtext()"><a href="index.html"><b id="back_txt">返回</b></a></div>
+		<div id="picture"></div>
+	</body>
+	<script>
+		function showtext(){
+			var back_txt=document.getElementById("back_txt");
+			var back=document.getElementById("back");
+			back_txt.innerHTML ="返回(我会一直在的~)";
+			back.setAttribute("style","width: 200px;")
+			
+		}
+	</script>
+</html>
